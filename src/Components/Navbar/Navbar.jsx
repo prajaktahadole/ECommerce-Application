@@ -10,11 +10,10 @@ import {
   Divider,
   Center,
   Icon,
-
 } from '@chakra-ui/react';
 import { SearchIcon} from '@chakra-ui/icons';
 import { AiOutlineShoppingCart , AiOutlineSmile } from "react-icons/ai";
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -87,18 +86,18 @@ function Navbar() {
               < Link to="/" >ALL</Link>
               < Link to="/mens">MEN</Link >
               < Link to="/women">WOMEN</Link >
-              < Link to="" >NEW ARRIVALS</Link > 
+              < Link to="/new" >NEW ARRIVALS</Link > 
              </HStack>
            
 
              <HStack paddingBottom={"20px"}>
               <ButtonGroup spacing={10} align='center'>
           
-             <Link to="/offer" >Offers</Link>
              < ButtonGroup >
               <Icon as={AiOutlineSmile}   w={5} h={6}></Icon>
               < Link  to="/login" >Login/Signup</Link>
               </ButtonGroup >
+
               <ButtonGroup display={"flex"}>
                 < Icon as={AiOutlineShoppingCart} w={6} h={6}></Icon>
                 < Link  to="/cart" >Cart</Link>
